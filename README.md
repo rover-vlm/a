@@ -12,7 +12,7 @@ This repository will contain the official implementation of the paper:
 
 ## 📁 Evaluation Dataset
 
-The evaluation dataset used in our experiments is publicly available for download:
+The evaluation dataset used in our experiments can be downloaded here:
 
 👉 [Download Evaluation Dataset](https://drive.google.com/drive/folders/1Tj5lpItYeQ7hMKenBfs6iZACY168id8Y?usp=share_link)
 
