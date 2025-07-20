@@ -18,3 +18,10 @@ The evaluation dataset used in our experiments can be downloaded here:
 
 ---
 
+## 📁 Demos (anonymous)
+
+Example videos showing ROVER frame-level reasoning and task progress prediction can be seen here:
+
+👉 [https://rover-vlm.github.io/anon/](https://rover-vlm.github.io/anon/)
+
+---
