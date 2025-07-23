@@ -35,8 +35,8 @@ llm_evaluator_eval3_model_name=model_name
 
 
 task="PnPCounterToCab"
-# task="PnPCabToCounter"
 # task="OpenSingleDoor"
+# ...
 
 
 if 'gpt' in model_name:
