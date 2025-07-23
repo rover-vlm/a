@@ -891,11 +891,10 @@ def get_groundtruth_qa(task, step_template, level):
             else:
                 groundtruth = 1
     elif task in ['TurnOnMicrowave', 'TurnOffMicrowave'] or task in ['CoffeePressButton']:
-        if True:
-            if '1' in level_int or '2' in level_int:
-                groundtruth = 0
-            else:
-                groundtruth = 1
+        if '1' in level_int or '2' in level_int:
+            groundtruth = 0
+        else:
+            groundtruth = 1
     # 
     elif task in ['MicrowaveThawing']:
         if 'open' in step_template:
@@ -1070,11 +1069,10 @@ def get_groundtruth_frame_number(task, step_template, level, frame_idx_list, idx
             else:
                 groundtruth_idx = idx_final - 20
     elif task in ['TurnOnMicrowave', 'TurnOffMicrowave'] or task in ['CoffeePressButton']:
-        if True:
-            if '1' in level_int or '2' in level_int:
-                groundtruth_idx = 'NA'
-            else:
-                groundtruth_idx = idx_final - 20
+        if '1' in level_int or '2' in level_int:
+            groundtruth_idx = 'NA'
+        else:
+            groundtruth_idx = idx_final - 20
     elif task in ['MicrowaveThawing']:
         if 'open' in step_template:
             if '1' in level_int:

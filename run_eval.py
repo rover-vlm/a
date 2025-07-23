@@ -520,7 +520,6 @@ for episode_dir_idx in range(0,len(episode_dir_list[:2])):
     perturb_info_file = f'{episode_dir}/pertub_info.txt'
     idx_start_i, idx_final_i, idx_start_contact_i, idx_contact_i, idx_start_contact_expert_i, idx_contact_expert_i, task_description_i, dist_list_i, step_label_list_i, gripper_target_dist_list_i, env_dist_list_i, obj_is_touching_gripper_list_i, obj_is_only_touching_gripper_list_i = get_perturb_info(perturb_info_file)
     ######################################################################################
-    # if True:
     if method == 'rover':
         final_idx, subtask_list, subtask_progress_list, subtask_frame_descriptions_list, _ = rover(task_description_i, frame_file_list)
         final_progress_list, frame_descriptions_list = process_rover_output(subtask_list, subtask_progress_list, subtask_frame_descriptions_list)
