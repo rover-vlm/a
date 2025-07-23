@@ -223,7 +223,6 @@ def gvl(task_description_i, frame_file_list, image_file_num_list, try_count_max=
     prompt0 = prompt0_template_gvl.format(task_description=task_description_i, camera_view=camera_view.upper())
     base64_image0 = encode_image(frame_file_list[0])
     image_file_num_list_idx_shuffled = list(range(len(image_file_num_list)-1))
-    # randomly shuffle the image file numbers
     image_file_num_list_idx_shuffled = np.random.permutation(image_file_num_list_idx_shuffled).tolist()
     # 
     current_progress = 0
@@ -243,21 +242,13 @@ def gvl(task_description_i, frame_file_list, image_file_num_list, try_count_max=
                         messages_content = [
                                         {"type": "text", "text": prompt0},
                                         {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{base64_image0}", "detail": "high"}},
-                                        # {"type": "text", "text": f'\nTask completion percentage: {current_progress}%\n\n'},
-                                        # prompt_image0_append_gvl = '\nTask completion percentage: {current_progress}%\n\n'
                                         {"type": "text", "text": prompt_image0_append_gvl.format(current_progress=current_progress)},
-                                        # {"type": "text", "text": f'\nFrame {current_idx+1}: '},
-                                        # prompt_image_current_prepend_gvl = '\nFrame {current_idx}: '
                                         {"type": "text", "text": prompt_image_current_prepend_gvl.format(current_idx=current_idx+1)},
                                         {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{base64_image_current}", "detail": "high"}}
                                     ]
                     else:
                         messages_content = messages_content + [
-                                        # {"type": "text", "text": f'\nTask completion percentage: {current_progress}%\n'},
-                                        # {"type": "text", "text": f'\nFrame description: {current_frame_description}\n\n'},
-                                        # prompt_image_prev_prepend_gvl = '\nTask completion percentage: {current_progress}%\n\nFrame description: {current_frame_description}\n\n'
                                         {"type": "text", "text": prompt_image_prev_prepend_gvl.format(current_progress=current_progress, current_frame_description=current_frame_description)},
-                                        # {"type": "text", "text": f'\nFrame {current_idx+1}: '},
                                         {"type": "text", "text": prompt_image_current_prepend_gvl.format(current_idx=current_idx+1)},
                                         {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{base64_image_current}", "detail": "high"}}
                                     ]
