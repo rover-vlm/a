@@ -4,4 +4,4 @@ The evaluation dataset used in our experiments can be downloaded here:
 
 
 Download the dataset and set the `dataset_dir` variable to the path where the dataset is stored
-`dataset_dir = "/path/to/data/"`
+(i.e., `dataset_dir = "/path/to/data/"`)
