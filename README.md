@@ -1,9 +1,7 @@
 
 # ROVER: Recursive Reasoning Over Videos with Vision-Language Models for Embodied Tasks
 
-> **Code coming soon!**
-
-This repository will contain the official implementation of the paper:
+This repository contains the official implementation of methods for the paper:
 
 **ROVER: Recursive Reasoning Over Videos with Vision-Language Models for Embodied Tasks**
 
