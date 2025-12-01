@@ -1,5 +1,8 @@
 # ROVER: Recursive Reasoning Over Videos with Vision-Language Models for Embodied Tasks
 
+<p align="center">
+  <img src="satic/fig1_final.png" alt="ROVER Figure 1" width="900">
+</p>
 
 This repository contains the official implementation of the methods proposed in the NeurIPS 2025 paper:
 
