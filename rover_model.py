@@ -34,7 +34,7 @@ def flatten(nested):
             yield item
 
 
-def rover(task_description_i, camera_view, frame_file_list, current_start_idx=0, subtask_completion_threshold=100, include_last_subtask_frame=False):
+def rover(model_name, task_description_i, camera_view, frame_file_list, current_start_idx=0, subtask_completion_threshold=100, include_last_subtask_frame=False):
     current_idx = current_start_idx+1
     prompt0 = prompt0_template.format(task_description=task_description_i, decomposition_examples=decomposition_examples, camera_view=camera_view.upper())
     base64_image0 = encode_image(frame_file_list[current_start_idx])

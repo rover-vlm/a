@@ -27,7 +27,7 @@ def encode_image(image_path):
 
 
 
-def gvl(task_description_i, camera_view, frame_file_list, image_file_num_list, try_count_max=4):
+def gvl(model_name, task_description_i, camera_view, frame_file_list, image_file_num_list, try_count_max=4):
     #
     prompt0 = prompt0_template_gvl.format(task_description=task_description_i, camera_view=camera_view.upper())
     base64_image0 = encode_image(frame_file_list[0])
