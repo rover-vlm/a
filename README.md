@@ -1,15 +1,14 @@
 # ROVER: Recursive Reasoning Over Videos with Vision-Language Models for Embodied Tasks
-
-<p align="center">
-  <img src="static/fig1_final.png" alt="ROVER Figure 1" width="900">
-</p>
-
 This repository contains the official implementation of the methods proposed in the NeurIPS 2025 paper:
 
 > ROVER: Recursive Reasoning Over Videos with Vision-Language Models for Embodied Tasks  
 > Philip Schroeder, Ondrej Biza, Thomas Weng, Hongyin Luo, James Glass
 
 ROVER is a framework for frame-level reasoning and task progress prediction over long-horizon embodied manipulation videos using vision-language models.
+
+<p align="center">
+  <img src="static/fig1_final.png" alt="ROVER Figure 1" width="900">
+</p>
 
 ---
 ### 📄 Paper (arXiv)
