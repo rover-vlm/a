@@ -123,14 +123,15 @@ These outputs enable both task monitoring and post-hoc interpretability.
 
 If you use ROVER in your research, please cite:
 
-    @inproceedings{rover2025,
-      title     = {ROVER: Recursive Reasoning Over Videos with Vision-Language Models for Embodied Tasks},
+    @inproceedings{schroeder2025rover,
       author    = {Schroeder, Philip and Biza, Ondrej and Weng, Thomas and Luo, Hongyin and Glass, James},
-      booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+      title     = {ROVER: Recursive Reasoning Over Videos with Vision-Language Models for Embodied Tasks},
+      booktitle = {39th Conference on Neural Information Processing Systems},
       year      = {2025}
     }
 
 ---
+
 
 ## 📄 License
 
