@@ -7,7 +7,7 @@ This repository contains the official implementation of the methods proposed in 
 ROVER is a framework for frame-level reasoning and task progress prediction over long-horizon embodied manipulation videos using vision-language models.
 
 <p align="center">
-  <img src="static/fig1_final.png" alt="ROVER Figure 1" width="900">
+  <img src="static/fig1_final.png"  alt="ROVER Figure 1" width="900">
 </p>
 
 ---
