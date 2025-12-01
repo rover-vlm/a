@@ -1,35 +1,35 @@
-
 # ROVER: Recursive Reasoning Over Videos with Vision-Language Models for Embodied Tasks
 
-This repository contains the official implementation of methods for the NeurIPS 2025 paper:
+This repository contains the **official implementation** of the methods proposed in the NeurIPS 2025 paper:
 
-**ROVER: Recursive Reasoning Over Videos with Vision-Language Models for Embodied Tasks**
-Philip Schroeder, Ondrej Biza, Thomas Weng, Hongyin Luo, James Glass
+> **ROVER: Recursive Reasoning Over Videos with Vision-Language Models for Embodied Tasks**  
+> Philip Schroeder, Ondrej Biza, Thomas Weng, Hongyin Luo, James Glass
+
+ROVER is a framework for **frame-level reasoning and task progress prediction** over long-horizon embodied manipulation videos using vision-language models.
+
 ---
 
-## 📁 Quick Start
+## 🚀 Quick Start
 
-```
-from rover_model import (
-    rover,
-    process_rover_output,
-)
+Below is a minimal example demonstrating how to run ROVER on a sequence of frames:
+
+```python
+from rover_model import (rover, process_rover_output)
 import google.generativeai as genai
+import glob
 
 API_KEY = ...
 genai.configure(api_key=API_KEY)
-google_model = genai.GenerativeModel(model_name = "gemini-2.5-pro")
+google_model = genai.GenerativeModel(model_name="gemini-2.5-pro")
 
 frame_file_list = sorted(glob.glob("./test_video/frame_wrist_*.jpg"), key=lambda x: int(x.split('frame_wrist_')[-1].split('.jpg')[0]))
 task_description = "Pick the cupcake from the counter and place it in the cabinet."
 camera_view = "wrist view"
 
 final_idx, subtask_list, subtask_progress_list, subtask_frame_descriptions_list, _ = rover(task_description, camera_view, frame_file_list)
+
 final_progress_list, frame_descriptions_list = process_rover_output(subtask_list, subtask_progress_list, subtask_frame_descriptions_list)
 ```
-
----
-
 
 ## 📁 Demos 
 
