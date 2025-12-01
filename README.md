@@ -9,6 +9,7 @@ Philip Schroeder, Ondrej Biza, Thomas Weng, Hongyin Luo, James Glass
 
 ## 📁 Quick Start
 
+```
 from rover_model import (
     rover,
     process_rover_output,
@@ -25,7 +26,7 @@ camera_view = "wrist view"
 
 final_idx, subtask_list, subtask_progress_list, subtask_frame_descriptions_list, _ = rover(task_description, camera_view, frame_file_list)
 final_progress_list, frame_descriptions_list = process_rover_output(subtask_list, subtask_progress_list, subtask_frame_descriptions_list)
-
+```
 
 ---
 
