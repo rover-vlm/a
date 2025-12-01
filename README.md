@@ -1,5 +1,6 @@
 # ROVER: Recursive Reasoning Over Videos with Vision-Language Models for Embodied Tasks
 
+
 This repository contains the official implementation of the methods proposed in the NeurIPS 2025 paper:
 
 > ROVER: Recursive Reasoning Over Videos with Vision-Language Models for Embodied Tasks  
@@ -8,6 +9,11 @@ This repository contains the official implementation of the methods proposed in 
 ROVER is a framework for frame-level reasoning and task progress prediction over long-horizon embodied manipulation videos using vision-language models.
 
 ---
+### 📄 Paper (arXiv)
+https://arxiv.org/abs/2508.01943
+
+### 📄 Project page
+https://rover-vlm.github.io
 
 ## 🚀 Quick Start
 
@@ -26,7 +32,6 @@ task_description = "Pick the cupcake from the counter and place it in the cabine
 camera_view = "wrist view"
 
 final_idx, subtask_list, subtask_progress_list, subtask_frame_descriptions_list, _ = rover(task_description, camera_view, frame_file_list)
-
 final_progress_list, frame_descriptions_list = process_rover_output(subtask_list, subtask_progress_list, subtask_frame_descriptions_list)
 ```
 ---
