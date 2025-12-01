@@ -108,7 +108,6 @@ This allows robust reasoning over partial observability and complex manipulation
 
 ROVER returns:
 
-- final_idx: Final task completion index
 - subtask_list: Predicted subtask decomposition
 - subtask_progress_list: Progress over time per subtask
 - subtask_frame_descriptions_list: Frame-level reasoning outputs
