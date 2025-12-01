@@ -22,12 +22,12 @@ https://rover-vlm.github.io
 Below is a minimal example demonstrating how to run ROVER on a sequence of frames:
 ```python
 from rover_model import (rover, process_rover_output)
-import google.generativeai as genai
+from openai import OpenAI
 import glob
 
 API_KEY = ...
-genai.configure(api_key=API_KEY)
-google_model = genai.GenerativeModel(model_name="gemini-2.5-pro")
+client = OpenAI(api_key=API_KEY)
+model_name="gpt-5"
 
 frame_file_list = sorted(glob.glob("./test_video/frame_wrist_*.jpg"), key=lambda x: int(x.split('frame_wrist_')[-1].split('.jpg')[0]))
 task_description = "Pick the cupcake from the counter and place it in the cabinet."
